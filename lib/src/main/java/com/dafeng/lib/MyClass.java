@@ -1,6 +1,7 @@
 package com.dafeng.lib;
 
 import com.dafeng.lib.array.Array2;
+import com.dafeng.lib.array.HashSet1;
 
 
 public class MyClass {
@@ -13,9 +14,14 @@ public class MyClass {
 //        System.out.println(Arrays.toString(integers));
 //    }
         //最长公共前缀(14)
-        String[] string = new String[]{"abc", "adc", "aaa"};
-        String s = Array2.longestCommonPrefix(string);
-        System.out.println(s);
+//        String[] string = new String[]{"abc", "adc", "aaa"};
+//        String s = Array2.longestCommonPrefix(string);
+//        System.out.println(s);
+        //无重复字符的最长子串
+        String s="abccdeefgghkklmmn";
+        HashSet1 hashSet1=new HashSet1();
+        int subStringLength1 = hashSet1.getSubStringLength2(s);
+        System.out.println(subStringLength1);
     }
 
 
